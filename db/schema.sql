@@ -20,6 +20,7 @@ create table employee(
     first_name varchar(50) not null,
     last_name varchar(50) not null,
     role_id int not null,
+    manager_id int,
     foreign key (role_id) references role(id)
 );
 
@@ -34,10 +35,10 @@ insert into role (title, salary, department_id) values ('Software Engineer', 120
 insert into role (title, salary, department_id) values ('Accountant', 125000, 3);
 insert into role (title, salary, department_id) values ('Legal Team Lead', 130000, 4);
 insert into role (title, salary, department_id) values ('Lawyer', 110000, 4);
-insert into employee (first_name, last_name, role_id) values ('John', 'Doe', 1);
-insert into employee (first_name, last_name, role_id) values ('Jane', 'Doe', 2);
-insert into employee (first_name, last_name, role_id) values ('John', 'Smith', 3);
-insert into employee (first_name, last_name, role_id) values ('Jane', 'Smith', 4);
-insert into employee (first_name, last_name, role_id) values ('John', 'Doe', 5);
-insert into employee (first_name, last_name, role_id) values ('Jane', 'Doe', 6);
-insert into employee (first_name, last_name, role_id) values ('John', 'Smith', 7);
+insert into employee (first_name, last_name, role_id, manager_id) values ('John', 'Doe', 1, null);
+insert into employee (first_name, last_name, role_id, manager_id) values ('Jane', 'Doe', 2, null);
+insert into employee (first_name, last_name, role_id, manager_id) values ('John', 'Smith', 3, null);
+insert into employee (first_name, last_name, role_id, manager_id) values ('Jane', 'Smith', 4, null);
+insert into employee (first_name, last_name, role_id, manager_id) values ('John', 'Doe', 5, null);
+insert into employee (first_name, last_name, role_id, manager_id) values ('Jane', 'Doe', 6, null);
+insert into employee (first_name, last_name, role_id, manager_id) values ('John', 'Smith', 7, 1);
