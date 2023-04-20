@@ -10,7 +10,7 @@ This is a command-line application utilizing Node.js, Inquirer, and MySQL for th
     License
 
 ## Installation 
-In order to use this application, you will need to have Node.js, Inquirer, console.table and mysql2 installed. To launch the application, run the command "npm start". If you would like to view the database stored in MySQL, run the command "mysql -u root -p".
+In order to use this application, you will need to have Node.js, Inquirer, console.table and mysql2 installed. If you would like to view the database stored in MySQL, run the command "mysql -u root -p".
 
 ## Usage
 Once you're connected to the sql database, add the schema and seed. Type "npm start" or "node index.js" in the terminal to launch. Once it's launched you'll be able to view, add, and edit employees, roles, departments and managers.
